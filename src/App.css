@@ -1,0 +1,187 @@
+.intro {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.name {
+  color: #b5b5b5a4;
+  font-weight: 500;
+  font-size: clamp(1rem, 6vw, 6rem); 
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.logo img {
+  width: 700px; /* or try 150px / 200px for larger size */
+  height:500px;
+  margin-left: 100px; 
+}
+.About-heading {
+  text-align: center;
+  font-size: clamp(1rem, 4vw, 8rem);
+  color: #678273; /* Neon cyan */
+  text-shadow: 
+    0 0 1px #589272, 
+    0 0 1px #449c9f, 
+    0 0 1px #00f7ff, 
+    0 0 40px rgb(108, 180, 160), 
+    0 0 80px rgb(77, 152, 107);
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.Skill-heading {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  text-align: center;
+  color: #f3f3f3;
+
+  padding: 1.5rem 2rem;
+  margin-top: 40px;
+  border-radius: 16px;
+
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.1),
+    inset 0 0 0.5px rgba(255, 255, 255, 0.05);
+
+  letter-spacing: 1.2px;
+  transition: all 0.3s ease;
+}
+
+.Skill-heading:hover {
+  transform: scale(1.02);
+  box-shadow:
+    0 8px 40px rgba(0, 0, 0, 0.3),
+    inset 0 0 1px rgba(255, 255, 255, 0.1);
+}
+.Project-heading {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  text-align: center;
+  color: #f3f3f3;
+
+  padding: 1.5rem 2rem;
+  margin-top: 40px;
+  border-radius: 16px;
+
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.1),
+    inset 0 0 0.5px rgba(255, 255, 255, 0.05);
+
+  letter-spacing: 1.2px;
+  transition: all 0.3s ease;
+}
+.Project-heading:hover {
+  transform: scale(1.02);
+  box-shadow:
+    0 8px 40px rgba(0, 0, 0, 0.3),
+    inset 0 0 1px rgba(255, 255, 255, 0.1);
+}
+.project-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;   /* or use space-between or start */
+  align-items: flex-start;   /* aligns items to top */
+  gap: 2rem;                 /* space between cards */
+  flex-wrap: nowrap;        /* ❗ Prevent wrapping */
+}
+form {
+  background-color: #0e0e1c;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 500px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 10px rgba(0, 255, 100, 0.1);
+  margin: auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea {
+  width: 100%;
+  background-color: #1e1e2f;
+  border: 1px solid #333;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #2de37f;
+  outline: none;
+}
+
+form p {
+  color: #ff4d4d;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+form input[type="submit"] {
+  background-color: #2de37f;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #24c96e;
+}
+
+.getintouch{
+  font-size: xx-large;
+  font-weight: 400;
+  align-items: center;
+  margin: 20px;
+  padding: 2px;
+  color: #24c96e;
+}
+

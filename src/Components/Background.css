@@ -1,0 +1,8 @@
+.particles-container {
+  position: fixed;       /* Make it stick to the screen */
+  top: 0;
+  left: 0;
+  width: 100%;          /* Full viewport width */
+  height: 100%;         /* Full viewport height */
+  z-index: -1;           /* Behind all content */
+}
